@@ -1,9 +1,9 @@
 #!/bin/sh
-pip install gdown
-pip install python-decouple
-pip install tqdm
-pip install zipfile36
-pip install speechbrain
-pip install mir_eval
-pip install pyloudnorm
-pip install neptune-client
+pip3 install gdown
+pip3 install python-decouple
+pip3 install tqdm
+pip3 install zipfile36
+pip3 install speechbrain
+pip3 install mir_eval
+pip3 install pyloudnorm
+pip3 install neptune-client
