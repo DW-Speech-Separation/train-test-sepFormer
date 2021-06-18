@@ -37,6 +37,7 @@ import csv
 import logging
 
 
+
 # Define training procedure
 class Separation(sb.Brain):
     def compute_forward(self, mix, targets, stage, noise=None):
@@ -588,6 +589,9 @@ if __name__ == "__main__":
     # re-initialize the parameters
     for module in separator.modules.values():
         separator.reset_layer_recursively(module)
+    
+
+    
 
     if not hparams["test_only"]:
         # Training
