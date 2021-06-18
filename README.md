@@ -10,12 +10,13 @@ Nota: Se tiene que tener torch instalado.
 python download_resources.py
 
 # 3.Train
-- python train.py hyperparams/sepformer.yaml
+- python train.py hparams/sepformer.yaml
 
 
 
 
 1. git clone https://github.com/DW-Speech-Separation/train-test-sepFormer.git
 2. cd train-test-sepFormer
-3. pip install -r requirements.txt
-4. 
+3. sh requirements.sh
+4. python3 download_resources.py
+5. python3 train.py hparams/sepformer.yaml

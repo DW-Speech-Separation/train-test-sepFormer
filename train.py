@@ -572,36 +572,9 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Data preparation
-    from recipes.WSJ0Mix.prepare_data import prepare_wsjmix  # noqa
-
-    run_on_main(
-        prepare_wsjmix,
-        kwargs={
-            "datapath": hparams["data_folder"],
-            "savepath": hparams["save_folder"],
-            "n_spks": hparams["num_spks"],
-            "skip_prep": hparams["skip_prep"],
-        },
-    )
-
+    
     # Create dataset objects
-    if hparams["dynamic_mixing"]:
-
-        if hparams["num_spks"] == 2:
-            from dynamic_mixing import dynamic_mix_data_prep  # noqa
-
-            train_data = dynamic_mix_data_prep(hparams)
-        elif hparams["num_spks"] == 3:
-            from dynamic_mixing import dynamic_mix_data_prep_3mix  # noqa
-
-            train_data = dynamic_mix_data_prep_3mix(hparams)
-        else:
-            raise ValueError(
-                "The specified number of speakers is not supported."
-            )
-        _, valid_data, test_data = dataio_prep(hparams)
-    else:
-        train_data, valid_data, test_data = dataio_prep(hparams)
+    train_data, valid_data, test_data = dataio_prep(hparams)
 
     # Brain class initialization
     separator = Separation(
