@@ -2,18 +2,13 @@
 pip freeze > requirements.txt
 
 
-# 1 Crear ambiente
+# 1. Instalar dependencias
+- pip install -r requirements.txt
 
-# 2. Instalar dependencias
-
-
-# 3. Activar ambiente
-
-
-# 4. Descargar data
-
+Nota: Se tiene que tener torch instalado.
+# 2. Descargar data
 python download_resources.py
 
-# 4.Train
+# 3.Train
 - python train.py hyperparams/sepformer.yaml
-  
+
