@@ -12,3 +12,10 @@ python download_resources.py
 # 3.Train
 - python train.py hyperparams/sepformer.yaml
 
+
+
+
+1. git clone https://github.com/DW-Speech-Separation/train-test-sepFormer.git
+2. cd train-test-sepFormer
+3. pip install -r requirements.txt
+4. 
