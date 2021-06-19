@@ -24,9 +24,9 @@ experiment_name: sepformer
 output_folder: checkpoints/
 train_log: checkpoints/train_log.txt
 save_folder: checkpoints/Examples/
-train_data: data/csv/SEPFORMER_mixture_train_mix_clean_callfriend_spanish_5_seconds.csv
-valid_data: data/csv/SEPFORMER_mixture_val_mix_clean_callfriend_spanish_5_seconds.csv
-test_data: data/csv/SEPFORMER_mixture_val_mix_clean_callfriend_spanish_5_seconds.csv
+train_data: data/csv/SEPFORMER_mixture_train_mix_clean_callfriend_spanish.csv
+valid_data: data/csv/SEPFORMER_mixture_val_mix_clean_callfriend_spanish.csv
+test_data: data/csv/SEPFORMER_mixture_val_mix_clean_callfriend_spanish.csv
 skip_prep: False
 
 

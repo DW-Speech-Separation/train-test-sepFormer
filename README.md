@@ -14,7 +14,6 @@ python download_resources.py
 
 
 
-
 1. git clone https://github.com/DW-Speech-Separation/train-test-sepFormer.git
 2. cd train-test-sepFormer
 3. sh requirements.sh
