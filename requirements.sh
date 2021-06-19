@@ -6,4 +6,3 @@ pip3 install zipfile36
 pip3 install speechbrain
 pip3 install mir_eval
 pip3 install pyloudnorm
-pip3 install neptune-client

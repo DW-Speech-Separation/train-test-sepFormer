@@ -3,6 +3,10 @@ pip freeze > requirements.txt
 
 # Steps
 
+# Nota: se debe tener previamente instalado torch
+
+
+
 1. git clone https://github.com/DW-Speech-Separation/train-test-sepFormer.git
 2. cd train-test-sepFormer
 3. sh requirements.sh (Esto instala las dependencias usando pip3, si usted tiene pip cambiar pip3 por pip en el archivo requirements.sh)
